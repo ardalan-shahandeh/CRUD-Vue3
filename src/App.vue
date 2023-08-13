@@ -1,15 +1,17 @@
 <template>
-  <h1>WebProg.ir</h1>
+  <Header />
 
   <router-view></router-view>
 </template>
 
 <script>
-
+import Header from './components/sections/Header.vue'
 export default {
-  name: 'App',
-  
-}
+  name: "App",
+  components : {
+    Header
+  }
+};
 </script>
 
 <style>
